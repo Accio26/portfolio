@@ -1,3 +1,22 @@
+.works-section {
+
+  &-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      margin: 2rem;
+
+      @media (max-width: 37.5em) {
+        margin: 1rem;
+      }
+
+    }
+  }
+}
+
+
 .works {
   position: relative;
   overflow: hidden;
@@ -7,8 +26,8 @@
   color: #fff;
   text-align: center;
   position: absolute;
-  top: 3rem;
-  left: 3rem;
+  top: 2rem;
+  left: 2rem;
   z-index: 2;
   width: 350px;
   height: 250px;
@@ -18,6 +37,11 @@
   opacity: 0;
   font-size: 1.5rem;
   padding-top: 25%;
+
+  @include respond(tab-port) {
+    display: none;
+  }
+
 }
 
 .works:hover .mask {

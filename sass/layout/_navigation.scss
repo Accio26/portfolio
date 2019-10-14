@@ -12,6 +12,12 @@
             z-index: 1000;
             text-decoration: none;
         }
+
+        @media (max-width: 37.5em) {
+            display: none;
+        }
+
+
     }
 
     &__link {
